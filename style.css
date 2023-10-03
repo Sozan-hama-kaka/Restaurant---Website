@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Quicksand:wght@300;400;500;600;700&family=Saira:ital,wght@0,700;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+
+}
+li{
+    list-style: none ; 
+}
+a{
+    text-decoration: none;
+}
+/* Utility Classes */
+.primary-text{
+    color: orange;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+}
+.btn-primary{
+    color: white;
+    border: 1px solid white;
+}
+.btn-primary:hover{
+    background: orange;
+}
+.btn-secondary{
+    color: white;
+    background: orange;
+    margin-top: 2rem;
+}
+
+.btn-secondary:hover{
+    color: white;
+    background: #9a9a9a;
+    border: 1px solid orange;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+/* Header Section  */
+header{
+    height: 100vh;
+    background: url(./assets/rest.jpg) center center/cover no-repeat ;
+    position: relative;
+}
+header #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    height: 100px;
+    width: 100%;
+}
+header #navbar h3{
+    margin-left: 100px;
+    color: white;
+    font-weight: 700;
+
+}
+header #navbar h3:hover{
+    
+    color: orange;
+}
+header #navbar nav ul{
+    display: flex;
+    margin-right: 100px;
+}
+header #navbar nav ul li a{
+    padding: 15px 20px;
+    color: white;
+    font-weight: 700;
+}
+header #navbar nav ul li a:hover{
+    border-bottom: 2px solid orange;
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+header .content h1{
+    font-size: 40px;
+    color: white;
+}
+header .content p{
+    margin:20px 0 40px;
+    color: white;
+}
+header::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0,0.7);
+}
+header *{
+    z-index: 10;
+}
+
+/* Scetion About Start */
+
+#about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4ff;
+
+}
+
+
+#about .tittle, #offers .tittle,
+#menu .tittle{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 3rem;
+}
+
+#about h2, #menu h2, #offers h2 {
+    font-size: 40px;
+    color: orange;
+    /* margin-top: 30px; */
+    margin-bottom: 20px;
+}
+
+#about .tittle p{
+    font-size: 16px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+#about .about-content {
+    display: flex;
+    justify-content: space-between;
+}
+#about .about-content img{
+    width: 600px;
+    height: 500px;
+}
+#about .about-content p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+/* Section Menu  */
+
+#menu{
+    /* height: 100vh; */
+    padding: 5rem 0;
+}
+#menu .container{
+
+    margin-top: -3.5rem;
+}
+
+#menu .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+#menu .menu-items .menu-item{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 40px;
+    position: relative;
+
+}
+#menu .menu-items .menu-item img{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 40%;
+    margin-right: 40px ;
+
+}
+
+#menu .menu-items .menu-item .menu-item-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    flex: 1; /* Allow content to take available space */
+}
+#menu .menu-items .menu-item h3{
+    color: #383848 ;
+    border-bottom: 1px dashed orange;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+
+
+}
+#menu .menu-items .menu-item span{
+
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+
+#menu .btn{
+    display: block;
+    margin: 20px auto 0;
+    background: orange;
+    color: white;
+    cursor: pointer;
+}
+#menu .btn:hover{
+    background: white;
+    color: orange;
+    border: 1px solid orange;
+}
+
+/* Offers Start */
+
+#offers {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    /* background: #f4f4f4; */
+}
+#offers .container{
+
+    margin-top: 3rem;
+}
+#offers .tittle p{
+    font-weight: 600;
+    color: black;
+    /* margin-bottom: 120px; */
+
+}
+
+#offers .offers-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#offers .offers-items img{
+    width: 200px;
+}
+
+#offers .offers-items img .offer1-size{
+
+    width: 150px;
+    /* height: 130px; */
+}
+
+#offers .offers-items h3{
+    font-size: 22px;
+    margin: 15px;
+}
+
+#offers .offers-items p{
+    font-size: 14px ;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#offers .offers-items span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+
+}
+
+/* start daytime section  */
+
+#daytime{
+
+    background: orange;
+    color: white;
+    /* margin-top: 200px; */
+
+}
+#daytime .container{
+    margin-top: 70px;
+}
+
+#daytime .daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35vh;
+}
+
+#daytime .daytime-item img{
+    width: 140px;  
+}
+#daytime .daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+#daytime .daytime-items p{
+
+    font-weight: 500;
+    text-align: center;
+}
+
+/* contact start  */
+
+#contact {
+    height: 95vh;
+    padding: 5rem 0;
+    background: #f4f4f4;
+}
+
+/* #contact .container{
+
+    max-width: 1100px;
+} */
+
+#contact .contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact .contact-content .contact-info{
+
+    width: 50%;
+
+}
+#contact .contact-content .contact-info div{
+
+    margin: 30px 0 ;
+    line-height: 1.7;
+}
+#contact .contact-content .contact-info h3{
+
+    font-size: 28px;
+    color: orange;
+    margin-bottom: 10px;
+}
+#contact .contact-content .contact-info i{
+    color: Black;
+    margin-right: 10px;
+}
+#contact .contact-content .contact-info .contact-info-address span {
+    text-align: justify; 
+    text-indent: 25px; 
+    margin: 0; 
+
+}
+
+#contact .contact-content .contact-info a i {
+
+    color: white ;
+    background: orange;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#contact .contact-content .contact-info a i:hover{
+color: orange;
+background: white;
+border: 1px solid orange;
+}
+
+form {
+
+    width: 50%;
+}
+
+form input, textarea{
+    display: block ;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: 1px solid orange;
+}
+
+#contact .btn{
+    background: orange;
+    color: white;
+}
+
+#contact .btn:hover{
+    background: white;
+    color: orange;
+    border: 1px solid orange;
+}
+
+/* Footer section  */
+
+#footer {
+background: grey;
+text-align: center;
+color: white;
+padding: 15px 0;
+font-size: 14px;
+}
+
+#footer a {
+    color: orange;
+    margin-left: 10px;
+}
+
+
+/* Medium Screen + tablet */
+
+@media (max-width: 1000px){
+
+#navbar {
+
+    margin-left: 10px ;
+
+}
+#navbar nav ul{
+    margin-right: 20px;
+}
+#navbar nav ul li a{
+
+    padding: 10px;
+}
+header .content h1{
+    font-size: 28px;
+}
+
+#about{
+    padding: 0 3rem 0 3rem ;
+    
+}
+
+#about .about-content p{
+    margin-right: 1rem;
+    line-height: 1.5;
+}
+#about .about-content img{
+    display: none;
+}
+
+#menu .menu-items{
+    display: block;
+    
+}
+
+#offers .offers-items img{
+    width: 150px;
+}
+
+#offers .offers-items h3{
+    font-size: 18px;
+}
+
+#offers .offers-items p{
+    font-size: 12px ;
+}
+
+
+#offers .offers-items span{
+    font-size: 13px;
+
+}
+
+#contact {
+
+    height: auto;
+    background: #f4f4f4;
+}
+
+#contact .contact-content {
+    flex-direction: column;
+}
+
+
+
+}
+
+@media (max-width:600px) {
+
+    header #navbar{
+        flex-direction: column;
+    } 
+    header #navbar h3{
+        margin-left: 0px;
+        margin-bottom: 40px;
+    } 
+    header #navbar nav ul{
+
+        margin-right: 0px;
+    }
+    header .content h1{
+        font-size: 22px;
+
+    }
+    header .content p{
+
+        font-size: 15px;
+    }
+    
+    #about h2, #offers h2, #menu h2{
+        font-size: 25px;
+    }
+
+    #menu .menu-items .menu-item{
+        margin: 30px 10px;
+    }
+    #menu .tittle p{
+        font-weight: 300;
+    }
+
+    #offers {
+        height: auto;
+        padding: 30px 10px;
+    } 
+#offers .offers-items{
+    flex-direction: column;
+}
+
+#offers .offers-items img{
+    width: 100px;
+}
+#offers .offers-items h3{
+    font-size: 18px;
+    margin: 10px;
+}
+
+#daytime .daytime-items{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 30px 0;
+}
+#daytime .daytime-items .daytime-item{
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#daytime .daytime-item img{
+    width: 120px;  
+
+}
+#daytime .daytime-items h3{
+    font-size: 20px;
+
+}
+
+#daytime .daytime-items p{
+
+    font-weight: 300;
+    font-size: small;
+
+}
+
+#contact .contact-info , form{
+
+    width: 80%;
+}
+
+}
