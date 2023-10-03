@@ -1,0 +1,33 @@
+
+
+@media screen and (max-width: 1200px) {
+
+
+    header #navbar{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    } 
+    header #navbar h3{
+        margin-left: 3px;
+        color: white;
+        font-weight: 700;
+    
+    }
+    header #navbar nav ul{
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    header .content h1{
+        font-size: 18px;
+    
+    }
+    header .content p{
+        
+        font-size: 15px;
+    }
+
+    
+}

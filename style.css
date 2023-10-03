@@ -423,7 +423,7 @@ font-size: 14px;
 
 
 /* Medium Screen + tablet */
-
+/*
 @media (max-width: 1000px){
 
 #navbar {
@@ -575,4 +575,4 @@ header .content h1{
     width: 80%;
 }
 
-}
+} */
